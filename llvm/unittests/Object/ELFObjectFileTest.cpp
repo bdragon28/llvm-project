@@ -174,7 +174,7 @@ TEST(ELFObjectFileTest, MachineTestForPPC64) {
 }
 
 TEST(ELFObjectFileTest, MachineTestForPPC) {
-  std::array<StringRef, 4> Formats = {"elf32-powerpc", "elf32-powerpc",
+  std::array<StringRef, 4> Formats = {"elf32-powerpcle", "elf32-powerpc",
                                       "elf64-unknown", "elf64-unknown"};
   size_t I = 0;
   for (const DataForTest &D : generateData(ELF::EM_PPC))
